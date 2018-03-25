@@ -23,6 +23,7 @@ public class CustomerDaoImpl implements CustomerDao {
 
 	@Override
 	public Date getTime() {
+		System.out.println(" -- Current time: ");
 		return new Date();
 	}
 
