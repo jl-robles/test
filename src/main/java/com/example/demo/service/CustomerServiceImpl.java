@@ -1,5 +1,7 @@
 package com.example.demo.service;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +19,11 @@ public class CustomerServiceImpl implements CustomerService {
 		customer.getData();
 		
 		return customer;
+	}
+
+	@Override
+	public Date getTime() {
+		return customer.getTime();
 	}
 
 }
