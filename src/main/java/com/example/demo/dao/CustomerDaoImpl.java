@@ -1,5 +1,7 @@
 package com.example.demo.dao;
 
+import java.util.Date;
+
 import org.springframework.stereotype.Repository;
 
 import com.example.demo.model.Customer;
@@ -17,6 +19,11 @@ public class CustomerDaoImpl implements CustomerDao {
 		custom.setAccount(123456789);
 
 		return custom;
+	}
+
+	@Override
+	public Date getTime() {
+		return new Date();
 	}
 
 }
